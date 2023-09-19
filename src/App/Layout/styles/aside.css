@@ -23,7 +23,6 @@ aside li {
 }
 
 aside li a {
-  var(--color-black);
   display: block;
   padding: 0.5rem;
   text-decoration: none;
@@ -39,8 +38,4 @@ aside a.active {
 
 aside svg:has(+ a.active) path { 
 stroke: var(--color-red);
-}
-
-aside svg {
-  stroke: #491ec4;
 }
