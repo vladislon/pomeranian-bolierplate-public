@@ -3,6 +3,18 @@ import { CalendarIcon } from '../Components/Icons/CalendarIcon';
 import './styles/cookies.css';
 
 export function AppCookies() {
+  function setCookieState() {
+    localStorage.setItem('cookieState', 1);
+  }
+
+  function getCookieState() {
+    return localStorage.getItem('cookieState');
+  }
+
+  if (getCookieState()) {
+    return null;
+  }
+
   return (
     <div className="cookies">
       <div className="cookies-left">
@@ -22,7 +34,7 @@ export function AppCookies() {
       </div>
 
       <div className="cookies-right">
-        <button>W porządku</button>
+        <button onClick={setCookieState}>W porządku</button>
 
         <button>Dopasuj zgody</button>
       </div>
