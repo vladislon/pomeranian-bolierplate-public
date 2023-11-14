@@ -7,7 +7,7 @@ import { memoGameMetaData } from './MemoGame/router-data';
 import { basicFormsMetaData } from './BasicForms/router-data';
 import { basicReactHookFormsMetaData } from './BasicReactHookForms/router-data';
 import { orderFormMetaData } from './OrderForm/router-data';
-
+import { reactFirebaseMetaData } from './ReactFirebase/router-data';
 export const blockRouterMetaData = [
   SubRouteExampleMetaData,
   EventsMetaData,
@@ -16,5 +16,6 @@ export const blockRouterMetaData = [
   basicFormsMetaData,
   basicReactHookFormsMetaData,
   orderFormMetaData,
+  reactFirebaseMetaData,
 ];
 export const blockRouterData = getParsedRouterDataList(blockRouterMetaData);
