@@ -4,12 +4,18 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { App } from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-//zamiast tego to inne SS 2023-11-08
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// store - redux
+import { store } from './store/index.js';
 
-//root.render(<App />);
+// Provider - react-redux
+import { Provider } from 'react-redux';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  // <React.StrictMode>
+  <Provider store={store}>
+    <App />
+  </Provider>
+  // </React.StrictMode>
+);

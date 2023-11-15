@@ -8,7 +8,7 @@ module.exports = defineConfig({
   },
 });
 
-/* [Wczoraj 21:08] Katarzyna Zofia  Olkowska
+/* [Wczoraj 15.11.2023 21:08] Katarzyna Zofia  Olkowska
 const { defineConfig } = require('cypress');
  
 module.exports = defineConfig({
